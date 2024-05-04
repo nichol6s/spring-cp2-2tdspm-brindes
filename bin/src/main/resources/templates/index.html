@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Benezinho - Authentication</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="author" content="Prof. Benefrancis do Nascimento"/>
+<!--    <meta name="autenticado" th:content="${usuario?.name}"/>-->
+
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.20.8/dist/css/uikit.min.css" />
+
+
+
+</head>
+
+<body>
+
+
+<div class="uk-position-relative ">
+
+    <!--~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~-->
+    <div th:insert="~{navbar/navbar :: copy}"></div>
+    <br>
+    <br>
+    <!--~~~~~~~~~~~~~~~ PRINCIPAL ~~~~~~~~~~~~~~~-->
+    <div    th:insert="~{principal/principal :: copy}"></div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~-->
+    <div th:insert="~{footer/footer :: copy}"></div>
+</div>
+
+</body>
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.20.8/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.20.8/dist/js/uikit-icons.min.js"></script>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
+
+<header th:fragment="copy" id="navbar">
+
+    <nav class="uk-navbar-container">
+        <div class="uk-container-expand uk-padding-small ">
+
+            <div uk-navbar="dropbar: true; dropbar-anchor: !.uk-navbar; target-y: !.uk-navbar">
+
+                <div class="uk-float-left uk-margin-right uk-margin-left ">
+                    <a class="uk-navbar-item uk-logo" href="#" aria-label="Back to Home">
+                        <img th:src="@{/img/desenho-logo-branco.png}" width="35" height="35"
+                             uk-img/> <strong>BENEZINHO'S</strong>
+                    </a>
+                </div>
+
+
+                <div class="uk-navbar-right uk-margin-right ">
+
+                    <ul class="uk-navbar-nav">
+                        <li>
+                            <a href="#">Aluno</a><!--                             th:text="${usuario?.name}"-->
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-active">
+                                        <a href="#">Perfil</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pedidos</a>
+                                    </li>
+
+                                    <li>
+                                        <ul>
+                                            <!--                                            <li th:each="p : ${usuario?.authorities}">-->
+                                            <!--                                                <a href="/user"-->
+                                            <!--                                                   th:if="${p.authority=='ROLE_ADMIN'}">ADMINISTRAR SISTEMA</a>-->
+                                            <!--                                            </li>-->
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/logout">SAIR</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+</header>
+</html>

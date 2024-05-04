@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
+
+<body>
+
+<section th:fragment="copy" id="painel">
+
+    <div class="uk-padding-short uk-margin " uk-grid>
+
+        <!--PRODUTOS ------------------------------------------------------>
+        <div class="uk-width-1-4@xl uk-width-1-2@m uk-width-1-1@s ">
+
+            <a class="uk-button  uk-button-link">
+
+                <div>
+                    <img class="uk-width-auto" th:src="@{/img/camisetas.png}"/>
+                </div>
+
+                <div class="uk-child-width-1-3" uk-grid>
+
+                    <div class="uk-margin">
+                        <p><strong>Camisetas</strong></p>
+                    </div>
+
+                    <div class="uk-divider-vertical">
+
+                        <div uk-form-custom="target: > * > span:last-child">
+                            <select aria-label="Custom controls">
+                                <option value="P">P</option>
+                                <option value="M">M</option>
+                                <option value="G">G</option>
+                                <option value="GG">GG</option>
+                            </select>
+                            <span class="uk-link">
+                            <span uk-icon="icon: tag" uk-margin></span>
+                            <span></span>
+                            </span>
+                        </div>
+
+                        <div uk-form-custom="target: > * > span:last-child">
+                            <select aria-label="Custom controls">
+                                <option value="BRANCO">BRANCO</option>
+                                <option value="PRETO">PRETO</option>
+                            </select>
+                            <span class="uk-link">
+                            <span uk-icon="icon: paint-bucket"></span>
+                            <span></span>
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="uk-margin-remove   uk-width-expand">
+                        <h4>R$ <strong>99,99</strong></h4>
+                        <p>+ frete</p>
+                    </div>
+
+                </div>
+
+            </a>
+        </div>
+
+
+        <div class="uk-width-1-4@xl uk-width-1-2@m uk-width-1-1@s">
+            <a class="uk-button  uk-button-link">
+                <div>
+                    <img class="uk-width-auto" th:src="@{/img/brindes.png}"/>
+                </div>
+                <div class="uk-child-width-1-3" uk-grid>
+                    <div class="uk-width-1-3">
+                        <p class="uk-flex-wrap"><strong>Caneca e Copo</strong></p>
+                    </div>
+                    <div class="uk-divider-vertical"></div>
+                    <div class="uk-width-1-3 uk-width-expand">
+                        <h4>R$ <strong>59,99</strong></h4>
+                        <p>+ frete</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="uk-width-1-4@xl uk-width-1-2@m uk-width-1-1@s ">
+            <a class="uk-button  uk-button-link">
+                <div>
+                    <img class="uk-width-auto" th:src="@{/img/mochilas.png}"/>
+                </div>
+                <div class="uk-child-width-1-3" uk-grid>
+                    <div class="uk-width-1-3">
+                        <p class="uk-flex-wrap"><strong>Mochila e Sacola</strong></p>
+                    </div>
+                    <div class="uk-divider-vertical"></div>
+                    <div class="uk-width-1-2 uk-width-expand">
+                        <h4>R$ <strong>199,99</strong></h4>
+                        <p>+ frete</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="uk-width-1-4@xl uk-width-1-2@m uk-width-1-1@s">
+            <a class="uk-button  uk-button-link">
+                <div>
+                    <img class="uk-width-auto" th:src="@{/img/material-escritorio.png}"/>
+                </div>
+                <div class="uk-child-width-1-3" uk-grid>
+                    <div class="uk-width-1-3">
+                        <p class="uk-flex-wrap"><strong>Canta e Pasta</strong></p>
+                    </div>
+                    <div class="uk-divider-vertical"></div>
+                    <div class="uk-width-1-3 uk-width-expand">
+                        <h4>R$ <strong>39,99</strong></h4>
+                        <p>+ frete</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
